@@ -105,16 +105,16 @@ POST '/drinks'
 PATCH /drinks/<id>
 - Adds a new drink.
 - Required permissions: `patch:drinks`
-- Takes a json body. For example:
+- Takes a json body of optional elements. For example:
 {
-    "title": "Water", # optional
+    "title": "Water",
     "recipe": [
     	{
         "name": "Water",
         "color": "Blue",
         "parts": 1
     	}
-    ]                   # optional
+    ]
 }
 
 DELETE /drinks/<id>
